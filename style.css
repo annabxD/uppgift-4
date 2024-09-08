@@ -1,0 +1,120 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+  }
+  
+  nav {
+    text-align: center;
+    padding: 10px;
+  }
+  
+  nav a {
+    font-size: 0.9rem;
+    margin: 0 10px;
+    color: #fff;
+  }
+  
+  main {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .button {
+    background-color: #555;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .container {
+    width: 90%;
+    max-width: 900px;
+  }
+  
+  .section {
+    padding: 40px;
+    background-color: #f1f1f1;
+    margin: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  .section1 {
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .section1 img {
+    width: 100%;
+  }
+  
+  .section1 h2 {
+    font-size: 2.5rem;
+  }
+  
+  .catGrid {
+    grid-template-columns: 1fr;
+  }
+  
+  .catGrid img {
+    width: 100%;
+    height: auto;
+  }
+
+
+img {
+    max-width: 100%;  
+    height: auto;     
+    display: block;   
+  }
+  
+  
+  footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+  }
+
+  @media (max-width: 768px) {
+    .catGrid {
+      grid-template-columns: 1fr 1fr;
+    }
+    
+    .section1 h2 {
+      font-size: 2rem; 
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .section1 {
+      flex-direction: column; 
+    }
+    
+    .catGrid {
+      grid-template-columns: 1fr; 
+    }
+    
+    nav a {
+      margin: 0 10px; 
+    }
+    
+    .button {
+      padding: 8px 16px; 
+    }
+  }
+  
+  
